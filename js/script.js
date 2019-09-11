@@ -22,47 +22,7 @@ $(function() {
      mainAudio.play();
   }
   
-  // function for drag and drop
-  // function dragDrop(){
-  // $('.dragg').draggable({
-  //       revert: 'invalid'
-  // });
 
-  // $(".dropp" ).droppable({
-  //       accept:".dragg",
-  //       drop: function (event, ui) {
-  //           $(".dragg" ).draggable({ disabled: true });
-  //           // let dragItem = event.target;
-  //           ui.draggable.draggable({ disabled: true });
-  //           var dragId = ui.draggable.attr("id");
-  //           console.log(dragId);
-  //           if(dragId=='match'){
-  //               console.log("correct")
-  //               $(this).addClass('right');
-  //               $('.happy').slideUp().fadeIn();
-  //               let audioData = new Audio(wellDone);
-  //               audioData.play();
-  //                 if(index == data.length-1){
-  //                   $('#next').hide();
-  //                 }else{
-  //                   setTimeout(function(){
-  //                      next();
-  //                   },5000)
-  //                 }
-  //           } else{
-  //               console.log("incorrect");
-  //               $(this).addClass('wrong');
-  //               $('.sad').slideUp().fadeIn();
-  //               let audioData = new Audio(tryAgain);
-  //               audioData.play();
-  //               setTimeout(function(){
-  //                 location.reload();
-  //               },5000)
-  //           }
-  //       }
-  // }); 
-
-  // }  //end here drag and drop 
 
 
   let questionHtml = '';
@@ -83,29 +43,16 @@ $(function() {
       // to play audio
        let mainAudio = new Audio(data[index].audio);
        mainAudio.play(); 
-   
-      
-      // to append the suggestions
-      // let suggHtml = `<div id="match" class="suggData dragg"><span>${data[index].corrAns}</span></div>
-      //                <div class="suggData suggData1 dragg"><span>${data[index].sugg1}</span></div>
-      //                <div class="suggData suggData2 dragg"><span>${data[index].sugg2}</span></div>`;
-      // $('.suggestionContainer').html(suggHtml);
+
 
       // to append the img
       $('.imgContainer').html(`<img id="image" src="${data[index].img}" class="animated zoomIn slow">`);
   }  // end function to load the data
 
 
-  // function to generate random index
-  // function randomsuggestion(){
-  //  $('#match').css({  'order': Math.floor((Math.random() * 3) + 1)});
-  //  $('.suggData1').css({  'order': Math.floor((Math.random() * 3) + 1)});
-  //  $('.suggData2').css({  'order': Math.floor((Math.random() * 3) + 1)});
-  // }  // end function to generate random index
 
   loadData();
-  // dragDrop();
-  // randomsuggestion();
+
 
 
   // to check the input value.
@@ -180,12 +127,5 @@ function checkValue(){
 
 
 
-
-  // if(index > 0){
-  //   $('#next').fadeIn();
-  // }
-  // if(index == data.length-1){
-  //   $('#next').hide();
-  // }
 
 });
