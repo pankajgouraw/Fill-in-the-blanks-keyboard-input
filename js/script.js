@@ -68,6 +68,7 @@ function checkValue(){
           console.log('correct');
                 $(inputField).addClass('right');
                 $('.happy').slideUp().fadeIn();
+                $('.sad').hide();
                 let audioData = new Audio(wellDone);
                 audioData.play();
                   if(index == data.length-1){
@@ -79,13 +80,13 @@ function checkValue(){
                   }
        }else{
         console.log('incorrect');
-         $(inputField).addClass('wrong');
+                $(inputField).addClass('wrong');
                 $('.sad').slideUp().fadeIn();
                 let audioData = new Audio(tryAgain);
                 audioData.play();
-                setTimeout(function(){
-                  location.reload();
-                },5000)
+                // setTimeout(function(){
+                //   location.reload();
+                // },5000)
        }
     }
   }
