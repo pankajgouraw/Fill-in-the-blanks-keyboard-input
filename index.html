@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>ClassTeacher</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
+      <script type="text/javascript" src="js/enableDragMobile.js"></script>
+   </head>
+   <body>
+      <!-- <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;"> -->
+      <div class="wrapper">
+         <div class="innerWrapper">
+            <div class="logoWrapper">
+               <a href="index.html"><img src="img/logo.png"></a>
+               <h2 id="activityText">Activity</h2>
+               <h2 id="LetterText">B</h2>
+            </div> 
+            <h3 id='fillTheBlank'>Fill the blank space with letter B.</h3>
+            <div class="questionContainer">
+               <div class="dropp dropContainer suggData"></div>
+               <div class="dropSuggestions">
+                  <!-- <div class="suggData"><span>a</span></div>
+                  <div class="suggData"><span>l</span></div>
+                  <div class="suggData"><span>l</span></div> -->
+               </div>
+            </div> 
+<!--             <div class="suggestionContainer">
+               <div id="match" class="suggData dragg"><span>a</span></div>
+               <div class="suggData dragg"><span>b</span></div>
+               <div class="suggData dragg"><span>c</span></div>
+            </div>  -->
+
+            <div class="resultContainer">
+               <img src="img/sad.png" class="sad animated zoomIn">
+               <img src="img/happy.png" class="happy animated zoomIn">
+               <h3 class="happy animated zoomIn">Well Done...</h3>
+               <button id='tryAgain' class="sad animated zoomIn">Try Again</button>
+            </div>
+
+            <div class="imgContainer">
+               <!-- <img id="image" src="img/ball.png" class="animated zoomIn slow"> -->
+            </div>
+      </div>
+            <div class="navContainer">
+               <button id="prev">Prev</button>
+               <button id="next">Next</button>
+            </div>   
+   </div>
+      <script type="text/javascript" src="data/data.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+   </body>
+</html>
+
