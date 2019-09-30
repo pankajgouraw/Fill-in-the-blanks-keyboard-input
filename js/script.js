@@ -5,10 +5,7 @@ $(function() {
 
   $("#activityText").text(header);
   $("#activityText").css({'color':headerColor});
-  $("#fillTheBlank").css({'color':fillTheBlanksColor});
-  $('.wrapper').css({'outline':borderColor});
   $('body').css({'background':bgColor});
-  $('#LetterText').text(alphabate);
 
   // url value
   let url = window.location.href;

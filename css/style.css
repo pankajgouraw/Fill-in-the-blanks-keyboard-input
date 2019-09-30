@@ -25,7 +25,7 @@ body {
 }
 
 .innerWrapper h2{
-    font-family: cursive;
+    font-family: sans-serif;
     font-weight: bold;
     position: relative;
 	left: -70px;
@@ -34,7 +34,7 @@ body {
 #fillTheBlank{
     text-align: center;
 	font-weight: bold;
-	font-family: cursive;
+	font-family: sans-serif;
 	font-size: 30px;
 	margin-bottom: 20px;
 }
@@ -63,7 +63,7 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: cursive;
+	font-family: sans-serif;
     cursor:pointer;
 }
 .suggestionContainer{
@@ -98,7 +98,7 @@ transition: 0.5s all;}
 .resultContainer button{
     padding: 7px 10px;
     font-size: 16px;
-    font-family: cursive;
+    font-family: sans-serif;
     font-weight: 500;
     background: #e0155a;
     color: #fff;
@@ -107,7 +107,7 @@ transition: 0.5s all;}
     cursor:pointer;
 }
 
-.resultContainer h3{font-family: cursive; }
+.resultContainer h3{font-family: sans-serif; }
 .sad{display: none;}
 .happy{display: none;}
 
@@ -124,7 +124,7 @@ transition: 0.5s all;}
     border: none;
     background: #E91E63;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
     font-weight:500;
     padding: 10px 20px;
     color: #fff;
@@ -165,7 +165,7 @@ transition: 0.5s all;}
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: cursive;
+    font-family: sans-serif;
     border-radius: 7px;
 }
 
